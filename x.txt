@@ -1,1 +1,4 @@
 Invoke-WebRequest -Uri "http://dpriapp310.mgt.dis.gov.au:8082/artifactory/api/nuget/Choco-Local/Download/chocolatey/2.6.0" -Method Head
+Invoke-WebRequest -Uri "http://dpriapp310.mgt.dis.gov.au:8082/artifactory/api/nuget/Choco-Local/Download/chocolatey/2.6.0" -Method Head -Headers @{ "X-JFrog-Art-Api" = "<svc_automation_api_key>" }
+
+Invoke-WebRequest -Uri "http://dpriapp310.mgt.dis.gov.au:8082/artifactory/api/nuget/Choco-Local/Download/chocolatey/2.6.0" -Method Head -Headers @{ "Authorization" = "Bearer <svc_automation_token>" }
