@@ -1,1 +1,1 @@
-choco install chocolatey-management-database -y --package-parameters='/ConnectionString=""Server=Localhost;Database=ChocolateyManagement;Trusted_Connection=true;""'
+choco install chocolatey-management-database -y --package-parameters="'/SkipDatabasePermissionCheck'" --package-parameters-sensitive='/ConnectionString=""Server=Localhost;Database=ChocolateyManagement;User ID=ChocoUser;Password=Ch0c0R0cks;""'
